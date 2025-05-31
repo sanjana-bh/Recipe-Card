@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card</title>
+    <link rel="stylesheet" href="C:\Users\Anjali Bhardwaj\Desktop\INTERNSHIP\RECIPE CARD\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1 class="recipe-title">Chocolate Cake</h1>
+        
+        <div class="recipe-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Chocolate Cake">
+        </div>
+        
+        <div class="recipe-meta">
+            <div class="prep-time">
+                <span class="meta-label">Prep Time:</span>
+                <span class="meta-value">30 mins</span>
+            </div>
+            <div class="cook-time">
+                <span class="meta-label">Cook Time:</span>
+                <span class="meta-value">40 mins</span>
+            </div>
+            <div class="servings">
+                <span class="meta-label">Servings:</span>
+                <span class="meta-value">8</span>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <button id="startCooking" class="btn start-btn">Start Cooking</button>
+        
+        <div class="recipe-section ingredients">
+            <h2 class="section-title">
+                Ingredients 
+                <button id="toggleIngredients" class="toggle-btn">Show</button>
+            </h2>
+            <ul id="ingredientsList" class="hidden">
+                <li>2 cups all-purpose flour</li>
+                <li>2 cups sugar</li>
+                <li>3/4 cup unsweetened cocoa powder</li>
+                <li>2 teaspoons baking powder</li>
+                <li>1 1/2 teaspoons baking soda</li>
+                <li>1 teaspoon salt</li>
+                <li>1 cup milk</li>
+                <li>1/2 cup vegetable oil</li>
+                <li>2 large eggs</li>
+                <li>2 teaspoons vanilla extract</li>
+                <li>1 cup boiling water</li>
+            </ul>
+        </div>
+        
+        <div class="recipe-section instructions">
+            <h2 class="section-title">Instructions</h2>
+            <ol id="instructionsList">
+                <li class="step">Preheat oven to 350°F (175°C). Grease and flour two 9-inch round baking pans.</li>
+                <li class="step">In a large bowl, combine flour, sugar, cocoa, baking powder, baking soda, and salt.</li>
+                <li class="step">Add milk, oil, eggs, and vanilla. Beat on medium speed for 2 minutes.</li>
+                <li class="step">Stir in boiling water (batter will be thin). Pour batter into prepared pans.</li>
+                <li class="step">Bake for 30-35 minutes or until a toothpick inserted in the center comes out clean.</li>
+                <li class="step">Cool in pans for 10 minutes, then remove to wire racks to cool completely.</li>
+            </ol>
+            <button id="nextStep" class="btn next-btn hidden">Next Step</button>
+        </div>
+    </div>
+
+    <script src="C:\Users\Anjali Bhardwaj\Desktop\INTERNSHIP\RECIPE CARD\script.js"></script>
+</body>
+</html>
